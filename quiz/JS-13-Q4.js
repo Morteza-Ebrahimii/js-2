@@ -25,11 +25,12 @@ let arrowFunc = (x,y) => x + y;
 
 // todo:template string instead of "" and ''
 //*A string literal is the thing that you, a human writing or reading code, can recognize as the sequence "..." or '...'.
-let name = 'morteza';
-let last = "ebrahimi";
-console.log(name);
-console.log(last);
-//*But I do not understand the difference between those.
+const abj = {
+    firstName : "morteza",
+lastName : "ebrahimi",
+}
+const {firstName,secondlastName} = abj;
+console.log(`my name is ${firstName} and my last name is ${secondlastName}`);
 
 // todo:destructuring
 
